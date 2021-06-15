@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Recojo por otra persona\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-15 04:38+0000\n"
+"PO-Revision-Date: 2021-06-15 04:48+0000\n"
+"Last-Translator: renzo tejada\n"
+"Language-Team: Español de Perú\n"
+"Language: es_PE\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.2; wp-5.7.2\n"
+"X-Domain: rt-recojo-persona"
+
+#: recojo_checkout.php:52
+msgid "DNI"
+msgstr "DNI"
+
+#: recojo_checkout.php:34
+msgid "First name"
+msgstr "Nombres"
+
+#. Author URI of the plugin
+msgid "https://renzotejada.com/"
+msgstr "https://renzotejada.com/"
+
+#. URI of the plugin
+msgid "https://renzotejada.com/recojo-por-otra-persona"
+msgstr "https://renzotejada.com/recojo-por-otra-persona"
+
+#. Description of the plugin
+msgid "It will allow you the option of pick up by another person."
+msgstr "Le permitirá la opción de ser recogido por otra persona."
+
+#: recojo_checkout.php:43
+msgid "Last name"
+msgstr "Apellidos"
+
+#: recojo_checkout.php:128 recojo_checkout.php:139 recojo_checkout.php:150
+msgid "Pick-up DNI"
+msgstr "DNI de recojo"
+
+#: recojo_checkout.php:126 recojo_checkout.php:137 recojo_checkout.php:148
+msgid "Pick-up First name"
+msgstr "Nombres de Recojo"
+
+#: recojo_checkout.php:127 recojo_checkout.php:138 recojo_checkout.php:149
+msgid "Pick-up Last name"
+msgstr "Apellidos de Recojo"
+
+#: recojo_checkout.php:83
+msgid "Please enter 8 digits of DNI"
+msgstr "Por favor, introduzca 8 dígitos del DNI"
+
+#: recojo_checkout.php:78
+msgid "Please enter the Pick-up DNI"
+msgstr "Por favor, introduzca DNI de recojo"
+
+#: recojo_checkout.php:70
+msgid "Please enter the Pick-up First name"
+msgstr "Por favor, introduzca Nombre de recojo"
+
+#: recojo_checkout.php:74
+msgid "Please enter the Pick-up Last name"
+msgstr "Por favor, introduzca Apellidos de recojo"
+
+#. Name of the plugin
+msgid "Recojo por otra persona"
+msgstr "Recojo por otra persona"
+
+#. Author of the plugin
+msgid "Renzo Tejada"
+msgstr "Renzo Tejada"
+
+#: recojo_checkout.php:25 recojo_checkout.php:125 recojo_checkout.php:136
+#: recojo_checkout.php:147
+msgid "Will someone else receive your order?"
+msgstr "¿Recibirá otra persona su pedido?"
