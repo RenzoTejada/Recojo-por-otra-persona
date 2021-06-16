@@ -121,33 +121,33 @@ add_action('woocommerce_checkout_update_order_meta', 'rt_recojo_persona_save_che
 function rt_recojo_persona_show_checkout_field_order($order)
 {
     $order_id = $order->get_id();
-    $recojo = get_post_meta($order_id, '_recojo', true);
+    $recojo = esc_html(get_post_meta($order_id, '_recojo', true));
     echo '<p><strong>' . __('Will someone else receive your order?', 'rt-recojo-persona') . '</strong> ' . (($recojo) ? "SI" : "NO") . '</p>';
-    if (get_post_meta($order_id, '_recojo_nombre', true)) echo '<p><strong>' . __('Pick-up First name', 'rt-recojo-persona') . ' :</strong> ' . get_post_meta($order_id, '_recojo_nombre', true) . '</p>';
-    if (get_post_meta($order_id, '_recojo_apellido', true)) echo '<p><strong>' . __('Pick-up Last name', 'rt-recojo-persona') . ' :</strong> ' . get_post_meta($order_id, '_recojo_apellido', true) . '</p>';
-    if (get_post_meta($order_id, '_recojo_dni', true)) echo '<p><strong>' . __('Pick-up DNI', 'rt-recojo-persona') . ' :</strong> ' . get_post_meta($order_id, '_recojo_dni', true) . '</p>';
+    if (esc_html(get_post_meta($order_id, '_recojo_nombre', true))) echo '<p><strong>' . __('Pick-up First name', 'rt-recojo-persona') . ' :</strong> ' . esc_html(get_post_meta($order_id, '_recojo_nombre', true)) . '</p>';
+    if (esc_html(get_post_meta($order_id, '_recojo_apellido', true))) echo '<p><strong>' . __('Pick-up Last name', 'rt-recojo-persona') . ' :</strong> ' . esc_html(get_post_meta($order_id, '_recojo_apellido', true)) . '</p>';
+    if (esc_html(get_post_meta($order_id, '_recojo_dni', true))) echo '<p><strong>' . __('Pick-up DNI', 'rt-recojo-persona') . ' :</strong> ' . esc_html(get_post_meta($order_id, '_recojo_dni', true)) . '</p>';
 }
 
 add_action('woocommerce_admin_order_data_after_billing_address', 'rt_recojo_persona_show_checkout_field_order', 1, 1);
 
 function rt_recojo_persona_show_checkout_field_emails($order, $sent_to_admin, $plain_text, $email)
 {
-    $recojo = get_post_meta($order->get_id(), '_recojo', true);
+    $recojo = esc_html(get_post_meta($order->get_id(), '_recojo', true));
     echo '<p><strong>' . __('Will someone else receive your order?', 'rt-recojo-persona') . '</strong> ' . (($recojo) ? "SI" : "NO") . '</p>';
-    if (get_post_meta($order->get_id(), '_recojo_nombre', true)) echo '<p><strong>' . __('Pick-up First name', 'rt-recojo-persona') . ' :</strong> ' . get_post_meta($order->get_id(), '_recojo_nombre', true) . '</p>';
-    if (get_post_meta($order->get_id(), '_recojo_apellido', true)) echo '<p><strong>' . __('Pick-up Last name', 'rt-recojo-persona') . ' :</strong> ' . strtoupper(get_post_meta($order->get_id(), '_recojo_apellido', true)) . '</p>';
-    if (get_post_meta($order->get_id(), '_recojo_dni', true)) echo '<p><strong>' . __('Pick-up DNI', 'rt-recojo-persona') . ' :</strong> ' . get_post_meta($order->get_id(), '_recojo_dni', true) . '</p>';
+    if (esc_html(get_post_meta($order->get_id(), '_recojo_nombre', true))) echo '<p><strong>' . __('Pick-up First name', 'rt-recojo-persona') . ' :</strong> ' . esc_html(get_post_meta($order->get_id(), '_recojo_nombre', true)) . '</p>';
+    if (esc_html(get_post_meta($order->get_id(), '_recojo_apellido', true))) echo '<p><strong>' . __('Pick-up Last name', 'rt-recojo-persona') . ' :</strong> ' . esc_html(strtoupper(get_post_meta($order->get_id(), '_recojo_apellido', true))) . '</p>';
+    if (esc_html(get_post_meta($order->get_id(), '_recojo_dni', true))) echo '<p><strong>' . __('Pick-up DNI', 'rt-recojo-persona') . ' :</strong> ' . esc_html(get_post_meta($order->get_id(), '_recojo_dni', true)) . '</p>';
 }
 
 add_action('woocommerce_email_after_order_table', 'rt_recojo_persona_show_checkout_field_emails', 20, 4);
 
 function rt_recojo_persona_show_custom_fields_thankyou($order_id)
 {
-    $recojo = get_post_meta($order_id, '_recojo', true);
+    $recojo = esc_html(get_post_meta($order_id, '_recojo', true));
     echo '<p><strong>' . __('Will someone else receive your order?', 'rt-recojo-persona') . '</strong> ' . (($recojo) ? "SI" : "NO") . '</p>';
-    if (get_post_meta($order_id, '_recojo_nombre', true)) echo '<p><strong>' . __('Pick-up First name', 'rt-recojo-persona') . ' :</strong> ' . get_post_meta($order_id, '_recojo_nombre', true) . '</p>';
-    if (get_post_meta($order_id, '_recojo_apellido', true)) echo '<p><strong>' . __('Pick-up Last name', 'rt-recojo-persona') . '  :</strong> ' . get_post_meta($order_id, '_recojo_apellido', true) . '</p>';
-    if (get_post_meta($order_id, '_recojo_dni', true)) echo '<p><strong>' . __('Pick-up DNI', 'rt-recojo-persona') . ' :</strong> ' . get_post_meta($order_id, '_recojo_dni', true) . '</p>';
+    if (esc_html(get_post_meta($order_id, '_recojo_nombre', true))) echo '<p><strong>' . __('Pick-up First name', 'rt-recojo-persona') . ' :</strong> ' . esc_html(get_post_meta($order_id, '_recojo_nombre', true)) . '</p>';
+    if (esc_html(get_post_meta($order_id, '_recojo_apellido', true))) echo '<p><strong>' . __('Pick-up Last name', 'rt-recojo-persona') . '  :</strong> ' . esc_html(get_post_meta($order_id, '_recojo_apellido', true)) . '</p>';
+    if (esc_html(get_post_meta($order_id, '_recojo_dni', true))) echo '<p><strong>' . __('Pick-up DNI', 'rt-recojo-persona') . ' :</strong> ' . esc_html(get_post_meta($order_id, '_recojo_dni', true)) . '</p>';
 }
 
 add_action('woocommerce_thankyou', 'rt_recojo_persona_show_custom_fields_thankyou', 20);
@@ -158,11 +158,11 @@ function rt_recojo_persona_get_product_order($response, $object, $request)
     if (empty($response->data))
         return $response;
 
-    $recojo = get_post_meta($response->data['id'], '_recojo', true);
+    $recojo = esc_html(get_post_meta($response->data['id'], '_recojo', true));
     $response->data['billing']['recojo'] = ($recojo) ? 'SI' : 'NO';
-    $response->data['billing']['recojo_first_name'] = get_post_meta($response->data['id'], '_recojo_nombre', true);
-    $response->data['billing']['recojo_last_name'] = get_post_meta($response->data['id'], '_recojo_apellido', true);
-    $response->data['billing']['recojo_dni'] = get_post_meta($response->data['id'], '_recojo_dni', true);
+    $response->data['billing']['recojo_first_name'] = esc_html(get_post_meta($response->data['id'], '_recojo_nombre', true));
+    $response->data['billing']['recojo_last_name'] = esc_html(get_post_meta($response->data['id'], '_recojo_apellido', true));
+    $response->data['billing']['recojo_dni'] = esc_html(get_post_meta($response->data['id'], '_recojo_dni', true));
     return $response;
 }
 
