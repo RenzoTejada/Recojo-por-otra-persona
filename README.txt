@@ -2,8 +2,8 @@
 Contributors: renzotejada
 Tags: dni, recojo, recoger, otra persona,perú
 Requires at least: 5.2
-Tested up to: 5.7.2
-Stable tag: 0.0.2
+Tested up to: 5.9
+Stable tag: trunk
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -83,6 +83,10 @@ The information was obtained from the following urls:
 
 
 == Changelog ==
+
+= 0.0.3 (27/01/2022) =
+test: validación con WC 6.1.1
+test: validación con WP 5.9
 
 = 0.0.1 =
 Deploy del plugin Recojo por otra persona.
