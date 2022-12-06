@@ -9,7 +9,7 @@
  * Plugin Name:       Recojo por otra persona
  * Plugin URI:        https://renzotejada.com/recojo-por-otra-persona
  * Description:       It will allow you the option of pick up by another person.
- * Version:           0.0.4
+ * Version:           0.0.5
  * Author:            Renzo Tejada
  * Author URI:        https://renzotejada.com/
  * License:           GNU General Public License v3.0
