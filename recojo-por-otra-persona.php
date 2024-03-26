@@ -9,7 +9,7 @@
  * Plugin Name:       Recojo por otra persona
  * Plugin URI:        https://renzotejada.com/recojo-por-otra-persona
  * Description:       It will allow you the option of pick up by another person.
- * Version:           0.0.6
+ * Version:           0.0.7
  * Author:            Renzo Tejada
  * Author URI:        https://renzotejada.com/
  * License:           GNU General Public License v3.0
@@ -27,6 +27,11 @@ $plugin_recojo_version = get_file_data(__FILE__, array('Version' => 'Version'), 
 
 define('Version_RT_Recojo_Persona', $plugin_recojo_version['Version']);
 
+add_action( 'before_woocommerce_init', function() {
+    if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
+    }
+} );
 
 /*
  * CHECKOUT
