@@ -2,7 +2,7 @@
 Contributors: renzotejada, drplugins, alexistejada
 Tags: dni, recojo, recoger, otra persona,perú
 Requires at least: 5.2
-Tested up to: 6.4.3
+Tested up to: 6.5
 Stable tag: trunk
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -84,6 +84,10 @@ The information was obtained from the following urls:
 
 
 == Changelog ==
+
+= 0.0.8 (05/04/2024) =
+Fix: validando versión WC 8.7.0
+Fix: validando versión WP 6.5
 
 = 0.0.7 (26/03/2024) =
 Fix: validando versión WC 8.7.0
