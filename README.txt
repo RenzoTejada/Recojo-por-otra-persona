@@ -1,21 +1,18 @@
 === Recojo por otra persona ===
-Contributors: renzotejada, drplugins, alexistejada
+Contributors: renzotejada, huakotech, alexistejada
 Tags: dni, recojo, recoger, otra persona,perú
-Requires at least: 5.2
-Tested up to: 6.5
+Requires at least: 6.2
+Tested up to: 6.6.1
 Stable tag: trunk
-Requires PHP: 5.6
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 It will allow you the option of pick up by another person.
 
-You will find this same information in the readme.txt of the plugin and on our website https://renzotejada.com
-
 == Description ==
 
 It will allow you the option of pick up by another person.
-
 
 The plugin has the following features:
 
@@ -84,6 +81,10 @@ The information was obtained from the following urls:
 
 
 == Changelog ==
+
+= 0.1 (31/08/2024) =
+Fix: validando versión WC 9.2.3
+Fix: validando versión WP 6.6.1
 
 = 0.0.8 (05/04/2024) =
 Fix: validando versión WC 8.7.0
