@@ -1,9 +1,9 @@
 === Recojo por otra persona ===
 Contributors: renzotejada, huakotech, alexistejada
-Tags: dni, recojo, recoger, otra persona,perú
+Tags: dni, recojo, recoger, otra persona, perú
 Requires at least: 6.2
-Tested up to: 6.7
-Stable tag: trunk
+Tested up to: 6.7.1
+Stable tag: 0.3
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -81,6 +81,10 @@ The information was obtained from the following urls:
 
 
 == Changelog ==
+
+= 0.3 (16/01/2025) =
+Fix: validando versión WC 9.5.2
+Fix: validando versión WP 6.7.1
 
 = 0.2 (15/11/2024) =
 Fix: validando versión WC 9.4.1
