@@ -1,16 +1,30 @@
 === Recojo por otra persona ===
 Contributors: renzotejada, huakotech, alexistejada
 Tags: dni, recojo, recoger, otra persona, perú
-Requires at least: 6.2
-Tested up to: 6.7.1
-Stable tag: 0.3
+Requires at least: 6.8
+Tested up to: 7.1.4
+Stable tag: 0.4.0
 Requires PHP: 7.4
+WC requires at least: 8.2
+WC tested up to: 11.2.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 It will allow you the option of pick up by another person.
 
 == Description ==
+
+Permite que el comprador autorice a otra persona a recoger su pedido desde el checkout clásico de WooCommerce.
+
+* Checkbox opcional para habilitar los campos de nombres, apellidos y DNI.
+* Validación del DNI de 8 dígitos y campos obligatorios si se marca la opción.
+* Información de recojo en los pedidos, correos y página de agradecimiento.
+* Pantalla de configuración renovada con acceso al soporte.
+* Conserva los nombres de metadatos existentes y utiliza CRUD de pedidos de WooCommerce (HPOS).
+* Compatible con el checkout clásico. Checkout Blocks requiere integración adicional y NO se admite en esta versión.
+
+**Importante:** versiones de referencia declaradas; realiza pruebas funcionales antes de publicarlo en producción.
+
 
 It will allow you the option of pick up by another person.
 
@@ -81,6 +95,15 @@ The information was obtained from the following urls:
 
 
 == Changelog ==
+
+= 0.4.0 =
+* Modernización del guardado de datos del pedido mediante WooCommerce CRUD para HPOS.
+* Validación de campos con protección para POST ausente; DNI con 8 dígitos y sin alertas de navegador.
+* Panel de administración con configuración y enlace de soporte; acceso a Ajustes desde Plugins.
+* Presentación ordenada en administración, emails y página de confirmación; lectura de metadatos históricos.
+* Readme y metadatos actualizados para referencias WordPress 7.1.4 y WooCommerce 11.2.1.
+* Checkout Blocks aún no soportado; se requiere adaptación y pruebas adicionales.
+
 
 = 0.3 (16/01/2025) =
 Fix: validando versión WC 9.5.2
